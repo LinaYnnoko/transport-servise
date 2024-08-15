@@ -1,7 +1,130 @@
-header{
+*{
+    font-family: "Sofia Sans", serif ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+a:active, a:hover, a {
+    text-decoration: none;
+
+}
+
+.wrapper{
     display: flex;
     width: 100%;
-    height: 107px;
+    height: 110px;
     color: white;
 }
 
+.header{
+    max-width: 100%;
+    width: 83%;
+    display: flex;
+    position: relative;
+    margin-left:159px;
+    top:11px;
+}
+
+.header_logo{
+    color:#232323;
+    text-align:center;
+    vertical-align: middle;
+    font-size:50px;
+    border-style:hidden;
+    outline:none;
+    width:251px;
+}
+
+.component{
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    color:#232323;
+    text-align:left;
+    vertical-align:text-top;
+    font-size: 20px;
+    border-style:hidden;
+}
+.distance{
+    margin-left: 627px;
+}
+.email{
+    position: relative;
+}
+
+.phone{
+    position: relative;
+    left: 80px;
+}
+
+.social{
+    position: relative;
+    left: 154px;
+}
+
+.menu{
+    background: #242424;
+    height: 60px !important;
+}
+
+.menu_comp{
+    margin-left: 159px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 200px;
+    margin-top: 18px;
+}
+
+nav a {
+    display: inline;
+    color:#ffffff;
+    vertical-align: middle;
+    font-size:20px;
+    outline:none;
+    width:250px;
+    text-decoration: none;
+}
+
+.slider{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.slider h1{
+    color:#ffffff;
+    text-align:left;
+    vertical-align: middle;
+    font-size:70px;
+    border-style:hidden;
+    outline:none;
+    position: absolute;
+    margin-top: 114px;
+    margin-left: 178px;
+}
+
+.slider img{
+    position: relative;
+}
+
+.slider p{
+    position: absolute;
+    color:#ffffff;
+    text-align:left;
+    vertical-align: middle;
+    font-size:50px;
+    border-style:hidden;
+    width: 62%;
+    outline:none;
+    margin-top: 212px;
+    margin-left: 178px;
+}
