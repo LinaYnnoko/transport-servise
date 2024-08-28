@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
+
 *{
-    font-family: "Sofia Sans", serif ;
+    font-family: "Sofia Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     margin: 0;
     position: relative;
     box-sizing: border-box;
     text-decoration: none;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* additional classes */
 
 a.white:active, a.white:hover, a.white {
     text-decoration: none;
@@ -16,56 +27,64 @@ a.black:active, a.black:hover, a.black {
     color: #242424;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+.with-border{
+    border: 1px solid #A9A9A9;
 }
 
-.header{
-    display: flex;
-    position: relative;
-    width: 100%;
-    margin-left: 159px;
-    top: 10px;
+.noborder{
+    border: none !important;
 }
 
-.header_logo{
-    color:#232323;
-    text-align:center;
-    vertical-align: middle;
-    font-size:50px;
-    border-style:hidden;
-    outline:none;
-    width:251px;
+.nomargin{
+    margin: 0 !important;
 }
 
-.component{
-    display: flex;
-    position: relative;
+.black-background{
+    background-color:#232323;
+}
+
+/* ======================== */
+
+.footer-wrapper{
+    justify-content: space-between;
     align-items: flex-start;
+    height: 263px;
+}
+
+
+/* ======================== */
+
+
+/* Header */
+
+.header-logo-block{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+}
+
+.header-logo{
+    display: flex;
+    width: 83%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-logo a:first-child {
+    align-self: center;
+}
+
+.empty{
+    width: 30%;
+}
+.header-component > *{
     color:#232323;
     text-align:left;
     vertical-align:text-top;
-    font-size: 20px;
-    border-style:hidden;
-}
-
-.distance{
-    margin-left: 627px;
-}
-
-.email{
-    position: relative;
-}
-
-.phone{
-    position: relative;
-    left: 80px;
-}
-
-.social{
-    position: relative;
-    left: 154px;
+    font-size:20px;
+    font-weight: bold;
+    margin-top: 7px;
 }
 
 .menu{
@@ -73,7 +92,7 @@ body{
     height: 60px !important;
 }
 
-.menu_comp{
+.menu-main{
     margin-left: 159px;
 }
 
@@ -98,47 +117,83 @@ nav a {
     width:250px;
     text-decoration: none;
 }
+/* ======================== */
 
-.slider{
-    display: flex;
+/* Slider */
+.slider-container {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
-.slider_text{
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.sliders-text{
     position: absolute;
-    margin-left: 178px;
-    margin-top: 114px;
+    z-index: 99;
 }
 
-.slider h1{
-    margin-top: 0;
-    margin-bottom: 14px;
-    position: relative;
-    color:#ffffff;
-    vertical-align: middle;
-    font-size:70px;
-}
-
-.slider p{
-    position: relative;
-    color:#ffffff;
-    vertical-align: middle;
-    font-size:50px;
-    width: 67%;
-    margin-top: 0;
-    margin-bottom: 33px;
-}
-
-.slider button{
+.sliders-text > h1 {
     color: white;
-    font-size: 30px;
-    position: relative;
-    background: #EE5610;
-    width:458px;
-    height:67px;
+    text-align:left;
+    vertical-align:middle;
+    font-size:70px;
+    margin: 114px 0 0 178px ;
+    font-weight: 800;
 }
 
+.sliders-text > p{
+    width: 60%;
+    color:#ffffff;
+    font-weight: 700;
+    text-align:left;
+    vertical-align:middle;
+    font-size:50px;
+    margin: 33px 0 0 178px ;
+}
+
+.sliders-text > button{
+    color: white;
+    width: 27%;
+    height: 67px;
+    margin: 33px 0 0 178px ;
+
+    text-align:center;
+    vertical-align:middle;
+    font-size:30px;
+    font-weight: 600;
+
+    background-color:#ee5610;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
 
 /*------------------------------*/
 
@@ -188,25 +243,29 @@ nav a {
 
 .block-form{
     display: flex;
-    margin-top: 25px;
+    margin: 25px 0 25px 0;
     height:196px;
-    width:785px;
+    width:47%;
     position:relative;
     border: 1px solid #A9A9A9; /* Параметры границы */
+    justify-content: center;
+    align-items: center;
 }
 
 form > input{
+    margin-bottom: 12px;
     height:67px;
-    width:723px;
-    left:29px;
-    top:21px;
+    width: 100%;
     position:relative;
     font-size:30px;
 }
 
+.map-block{
+    width: 15%;
+}
 .address-block{
     height:63px;
-    width:270px;
+    width:100%;
     border: 1px solid #A9A9A9; /* Параметры границы */
     color:#232323;
     text-align:center;
@@ -214,9 +273,13 @@ form > input{
     font-size:20px;
     outline:none;
 }
+
+.map-div{
+    display: flex;
+    width: 85%;
+}
 .map-div > iframe{
-    max-width: 100%;
-    width: 1326px;
+    width: 100%;
     height: 666px;
 }
 
@@ -234,6 +297,173 @@ form > input{
     padding: 20px;
     text-align: center;
 }
+/* ======================== */
+
+/* Service style */
+.rent-block{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 40px
+}
+
+.rent-block-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rent-block-head > h2{
+    width: auto;
+    color:#232323;
+    text-align:left;
+    vertical-align:middle;
+    font-size:30px;
+    margin-right: 5px;
+}
+
+.header_line{
+    width: 100%;
+    background: #a8a8a8;
+    height: 1px;
+}
+
+.rent-car{
+    text-align: center;
+    width: 32.5%;
+    border: 1px solid #A9A9A9;
+    margin-bottom: 20px;
+}
+
+.rent-car img{
+    width: 90%;
+}
+
+.rent-car p{
+    color:#232323;
+    vertical-align:middle;
+    font-size:30px;
+    margin-bottom: 13px;
+}
+
+.rent-car button{
+    font-size:20px;
+    color: white;
+    background-color:#ee5610;
+    width: 80%;
+    height:41px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.rent-block-car{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/* ======================== */
+
+/* Card style */
+.information-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between
+}
+
+.information-section-colum{
+    width: 50%;
+}
+.card-product{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-product>img{
+    width: 100%;
+}
+
+.description-product-block{
+    margin-bottom: 13px;
+}
+
+.description-product-head{
+    text-align: center;
+    color:#232323;
+    vertical-align: middle;
+    font-size:30px;
+}
+
+.description-product-head > p{
+    margin-bottom: 20px;
+}
+
+.description-product{
+    border: 1px solid #A9A9A9;
+    color:#000000;
+    text-align:left;
+    vertical-align:middle;
+    font-size:20px;
+}
+
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A9A9A9;
+    height: 65px;
+    color:#000000;
+    vertical-align: middle;
+    font-size:20px;
+    margin: 10px 0;
+}
+
+.border-price{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A9A9A9;
+    height: 55px;
+    color:#000000;
+    vertical-align: middle;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+
+/*
+.description-product > span{
+    margin: 10px;
+}
+*/
+
+.description-product > p{
+    margin: 15px;
+}
+
+.description-product-form{
+    text-align: center;
+    border: 1px solid #A9A9A9;
+    width: 100%;
+}
+
+.product-form{
+    text-align: center;
+    width: 90%;
+}
+
+.form-button{
+    background-color:#ee5610;
+    color: white;
+}
+/* ======================== */
 
 /* About style */
 .contact-text-block{
@@ -306,6 +536,7 @@ form > input{
     justify-content: space-between;
     display: flex;
     width: 100%;
+    margin-bottom: 22px;
 }
 
 .text-section-block{
@@ -315,16 +546,15 @@ form > input{
 .text-section-contact{
     width: 49%;
     border: 1px solid #A9A9A9;
+    margin-bottom: 13px;
 }
 
 .contact-form{
     text-align: center;
-  width: 49%;
-  border: 1px solid #A9A9A9;
+    width: 49%;
+    border: 1px solid #A9A9A9;
 }
-.form-label{
 
-}
 .form-label > input{
     height:67px;
     width:90%;
@@ -335,7 +565,7 @@ form > input{
     vertical-align:middle;
     font-size:30px;
 
-    margin: 15px 0;
+/*    margin: 15px 0;*/
 }
 
 .gallery-button > input{
@@ -343,6 +573,7 @@ form > input{
     width:90%;
     color: white;
     background-color:#ee5610;
+    margin-bottom: 12px;
 
     vertical-align:middle;
     font-size:30px;
@@ -360,3 +591,5 @@ form > input{
     width: 100%;
     margin: 10px 0;
 }
+
+/* ======================== */
