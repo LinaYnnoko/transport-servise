@@ -2,18 +2,20 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+          rel="stylesheet">
 </head>
 
 <header class="header-pk">
     <div class="section noborder nomargin">
         <div class="header-logo-block">
             <div class="header-logo">
-                <a href="index.html"><img src="img/head-logo.png" width="203" height="35" class="logo-img"></a>
+                <a><img src="img/head-logo.png" width="203" height="35" class="logo-img"></a>
 
                 <div class="empty"></div>
 
@@ -35,6 +37,7 @@
                         </tbody>
                     </table>
                 </div>
+
                 <div class="header-component">
                     <table>
                         <tbody>
@@ -53,6 +56,7 @@
                         </tbody>
                     </table>
                 </div>
+
                 <div class="header-component">
                     <table>
                         <tbody>
@@ -77,9 +81,10 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
 
+            </div>
         </div>
+
         <div class="menu-background">
             <nav class="menu">
                 <ul class="menu-main">
@@ -89,42 +94,23 @@
                 </ul>
             </nav>
         </div>
+
+    </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#news"></a>
+        <a href="service.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+        <a href="about.html">О нас</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="img/arrow.png">
+        </a>
     </div>
 </header>
 
-<!--<header class="header-mob">
-    <div class="section section-header">
-        <div class="wrapper wrapper-header">
-            <div class="wrap-header_mob">
-                <div class="header_mob-main">
-                    <a href="index.html"><img src="images/mobile_logo.svg" alt=""/></a>
-                    <div class="button_open">
-                        <img src="images/mobile_lines-menu.svg" alt=""/>
-                    </div>
-                    <div class="button_close">
-                        <img src="images/krestik.svg" alt=""/>
-                    </div>
-                </div>
-                <div class="header_mob__ul">
-                    <div class="ul_links">
-                        <a href="about.html">О компании</a>
-                        <a href="services.html">Услуги</a>
-                        <a href="contact.html">Контакты</a>
-                    </div>
-                    <div class="lang">
-                        <div><span>Рус</span><span>Eng</span></div>
-                        <span class="open_lang"
-                        ><img src="images/lang_arrow.svg" alt=""
-                        /></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>-->
-
 
 <body>
+
 <!-- Слайдер -->
 <div class="slider-container">
     <div class="slider">
@@ -144,7 +130,7 @@
                 </p>
                 <button>Заказать звонок</button>
             </div>
-            <img src="img/sliderimg3.png">
+            <img src="img/sliderimg3.png" alt="">
         </div>
     </div>
     <button class="prev-button" type="button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
@@ -152,28 +138,28 @@
 </div>
 
 <!--  Блок 1 - преимущества-->
- <div class="section">
-     <div class="header_section">
+<div class="section">
+    <div class="header_section">
          <span>
              Мы предлагаем надежное решение
          </span>
-     </div>
-     <div class="wrapper">
-         <div class="wrapper-block">
-             <div class="text-section">
+    </div>
+    <div class="wrapper">
+        <div class="wrapper-block">
+            <div class="text-section">
                  <span> Строители часто сталкиваются с недостатком качественного песка. Песок, который не соответствует стандартам, может негативно повлиять на качество строительных работ
                 </span>
-                 <div style="margin-top: 80px"></div>
-                 <span>
+                <div style="margin-top: 80px"></div>
+                <span>
             Наш сертифицированный песок – идеальное решение для строительства. Мы предлагаем песок высокого качества, который удовлетворяет всем требованиям.
                 </span>
-             </div>
-             <div class="img-section">
-                 <img src="img/block1.png" alt="песок">
-             </div>
-         </div>
-     </div>
- </div>
+            </div>
+            <div class="img-section">
+                <img src="img/block1.png" alt="песок">
+            </div>
+        </div>
+    </div>
+</div>
 
 <!--  Блок 2 - предложение-->
 <div class="section">
@@ -185,25 +171,25 @@
     <div class="wrapper">
         <div class="wrapper-block" style="flex-direction: row-reverse;justify-content: space-between;">
             <div class="text-section" style="margin-top: 20px">
-                
+
                 <img src="img/1.svg" alt="один">
                 <span>
                      Мы гордимся экологической чистотой нашего продукта.
                  </span>
                 <div style="margin-top: 30px"></div>
-                
+
                 <img src="img/2.svg" alt="два">
                 <span>
                      Наш песок сертифицирован и соответствует ГОСТу.
                  </span>
                 <div style="margin-top: 30px"></div>
-                
+
                 <img src="img/3.svg" alt="три">
                 <span>
                      С нами вы получаете универсальное решение для различных строительных задач.
                  </span>
                 <div style="margin-top: 30px"></div>
-                
+
                 <img src="img/4.svg" alt="четыре">
                 <span>
                      Выбирая наш песок, вы инвестируете в долгосрочное качество.
@@ -216,7 +202,7 @@
     </div>
 </div>
 
- <!-- Блок 3 - форма-->
+<!-- Блок 3 - форма-->
 <div class="section">
     <div class="header_section">
          <span>
@@ -234,8 +220,12 @@
             </div>
             <div class="block-form">
                 <form action="">
-                    <input name="phone" required placeholder="Номер телефона" style="margin-bottom: 20px;">
-                    <input type="submit" value="Получить консультацию" style="background:#EE5610; color: white">
+                    <label class="bottom_form">
+                        <input name="phone" required placeholder="Номер телефона">
+                    </label>
+                    <label class="bottom_form">
+                        <input type="submit" value="Получить консультацию" style="background:#EE5610; color: white">
+                    </label>
                 </form>
             </div>
         </div>
@@ -250,7 +240,7 @@
          </span>
     </div>
     <div class="wrapper nomargin">
-        <div class="wrapper-block with-border">
+        <div class="wrapper-block noborder map_mob">
             <div class="map-block">
                 <div class="address-block">
                     г. Минск, ул. Одинцова <br>
@@ -262,7 +252,9 @@
                 </div>
             </div>
             <div class="map-div">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37622.51077236718!2d27.563624905468764!3d53.88897096394756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1724151388508!5m2!1sru!2sby"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37622.51077236718!2d27.563624905468764!3d53.88897096394756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1724151388508!5m2!1sru!2sby"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -270,38 +262,39 @@
 
 </body>
 
-<footer>
+<footer class="footer-pk">
     <div class="section">
         <div class="wrapper black-background nomargin noborder">
             <div class="wrapper-block footer-wrapper">
                 <div class="header_logo" style="margin-top: 20px; margin-right: 50px">
                     <a href="index.html" class="white"> ЛОГОТИП </a>
                 </div>
-                    <div class="footer-component">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td class="component-text">
-                                        Услуги
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span>Аренда спецтехники</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span>Грузоперевозки</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span>Песок с доставкой</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+
+                <div class="footer-component">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="component-text">
+                                Услуги
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Аренда спецтехники</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Грузоперевозки</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Песок с доставкой</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <div class="footer-component">
@@ -410,5 +403,7 @@
     </div>
 </footer>
 
+
 <script src="js/slider.js"></script>
+<script src="js/menu.js"></script>
 </html>

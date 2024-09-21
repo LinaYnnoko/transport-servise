@@ -25,3 +25,4 @@ const slide = () => {
 window.addEventListener('load', () => {
     slide();
 });
+
