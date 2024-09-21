@@ -774,7 +774,7 @@ nav a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 
@@ -812,6 +812,5 @@ nav a {
     .topnav.responsive a {
         float: none;
         display: block;
-        text-align: left;
     }
 }
